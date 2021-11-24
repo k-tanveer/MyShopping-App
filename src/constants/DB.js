@@ -1,0 +1,68 @@
+const DB = [
+  {
+    id: 1,
+    name: 'swet tshirt one',
+    price: '29.99',
+    like: true,
+    img: require('../assets/cloths.jpg'),
+    about: 'laorej lsdfhsjf sflasjdfkljs sldjflkasjdf lsklfjasd jkljsdlf ',
+  },
+  {
+    id: 2,
+    name: 'swet tshirt two',
+    price: '29.99',
+    like: true,
+    img: require('../assets/cloths.jpg'),
+    about: 'laorej lsdfhsjf sflasjdfkljs sldjflkasjdf lsklfjasd jkljsdlf ',
+  },
+  {
+    id: 3,
+    name: 'swet tshirt three',
+    price: '29.99',
+    like: true,
+    img: require('../assets/cloths.jpg'),
+    about: 'laorej lsdfhsjf sflasjdfkljs sldjflkasjdf lsklfjasd jkljsdlf ',
+  },
+  {
+    id: 4,
+    name: 'swet tshirt four',
+    price: '29.99',
+    like: true,
+    img: require('../assets/cloths.jpg'),
+    about: 'laorej lsdfhsjf sflasjdfkljs sldjflkasjdf lsklfjasd jkljsdlf ',
+  },
+  {
+    id: 5,
+    name: 'swet tshirt five',
+    price: '29.99',
+    like: true,
+    img: require('../assets/cloths.jpg'),
+    about: 'laorej lsdfhsjf sflasjdfkljs sldjflkasjdf lsklfjasd jkljsdlf ',
+  },
+  {
+    id: 6,
+    name: 'swet tshirt six',
+    price: '29.99',
+    like: true,
+    img: require('../assets/cloths.jpg'),
+    about: 'laorej lsdfhsjf sflasjdfkljs sldjflkasjdf lsklfjasd jkljsdlf ',
+  },
+  {
+    id: 7,
+    name: 'swet tshirt seven',
+    price: '29.99',
+    like: true,
+    img: require('../assets/cloths.jpg'),
+    about: 'laorej lsdfhsjf sflasjdfkljs sldjflkasjdf lsklfjasd jkljsdlf ',
+  },
+  {
+    id: 8,
+    name: 'swet tshirt eight',
+    price: '29.99',
+    like: true,
+    img: require('../assets/cloths.jpg'),
+    about: 'laorej lsdfhsjf sflasjdfkljs sldjflkasjdf lsklfjasd jkljsdlf ',
+  },
+];
+
+export default DB;
