@@ -12,10 +12,11 @@ import {useNavigation} from '@react-navigation/native';
 
 const width = Dimensions.get('screen').width / 2 - 30;
 
-const Card = ({cloths}) => {
-  const navigation = useNavigation();
+const Card = ({cloths, onCardPress}) => {
+  // const navigation = useNavigation();
+
   return (
-    <TouchableOpacity onPress={() => navigation.navigate('Details', cloths)}>
+    <TouchableOpacity onPress={() => onCardPress("presiing")}>
       <View style={styles.card}>
         <View style={{height: 100, alignItems: 'center'}}>
           <Image
