@@ -50,15 +50,7 @@ const Details = ({navigation, route}) => {
               <View style={styles.borderBtn}>
                 <Text style={styles.borderBtnText}>-</Text>
               </View>
-              <Text
-                style={{
-                  fontSize: 20,
-                  marginHorizontal: 10,
-                  fontWeight: 'bold',
-                  color: COLORS.dark,
-                }}>
-                1
-              </Text>
+              <Text style={style.quantityText}>1</Text>
               <View style={styles.borderBtn}>
                 <Text style={styles.borderBtnText}>+</Text>
               </View>
@@ -145,6 +137,12 @@ const styles = StyleSheet.create({
   borderBtnText: {
     fontWeight: 'bold',
     fontSize: 28,
+  },
+  quantityText: {
+    fontSize: 20,
+    marginHorizontal: 10,
+    fontWeight: 'bold',
+    color: COLORS.dark,
   },
   buyBtn: {
     width: 150,
