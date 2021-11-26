@@ -1,12 +1,10 @@
 import React from 'react';
 import {View, Text, SafeAreaView, StyleSheet, Image} from 'react-native';
-import COLORS from '../constants/color';
+import COLORS from '../../constants/color';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
 const Details = ({navigation, route}) => {
-  const cloth = route.params;
-  console.log('cloth', cloth);
-
+  const item = route.params;
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: COLORS.light}}>
       <View style={styles.header}>
@@ -18,10 +16,7 @@ const Details = ({navigation, route}) => {
         />
       </View>
       <View style={styles.imageContainer}>
-        <Image
-          source={cloth.img}
-          // style={{resizeMode: 'contain', flex: 1}}
-        />
+        <Image source={item.img} />
       </View>
       <View style={styles.detailsContainer}>
         <View
@@ -34,16 +29,47 @@ const Details = ({navigation, route}) => {
           <Text style={{fontSize: 18, fontWeight: 'bold'}}>Best choice</Text>
         </View>
         <View style={styles.clothNameContainer}>
-          <Text style={{fontWeight: 'bold', fontSize: 22}}>{cloth.name}</Text>
+          <Text style={{fontWeight: 'bold', fontSize: 22}}>{item.name}</Text>
           <View style={styles.priceTagContainer}>
-            <Text style={styles.priceTagText}>${cloth.price}</Text>
+            <Text style={styles.priceTagText}>${item.price}</Text>
           </View>
         </View>
         <View style={{paddingHorizontal: 20, marginTop: 10}}>
           <Text style={{fontSize: 20, fontWeight: 'bold', color: COLORS.dark}}>
             About
           </Text>
-          <Text style={styles.aboutText}>{cloth.about}</Text>
+          <Text style={styles.aboutText}>{item.about}</Text>
+
+          <View
+            style={{
+              marginTop: 20,
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+            }}>
+            <View style={{flexDirection: 'row', alignItems: 'center'}}>
+              <View style={styles.borderBtn}>
+                <Text style={styles.borderBtnText}>-</Text>
+              </View>
+              <Text
+                style={{
+                  fontSize: 20,
+                  marginHorizontal: 10,
+                  fontWeight: 'bold',
+                  color: COLORS.dark,
+                }}>
+                1
+              </Text>
+              <View style={styles.borderBtn}>
+                <Text style={styles.borderBtnText}>+</Text>
+              </View>
+            </View>
+            <View style={styles.buyBtn}>
+              <Text
+                style={{color: COLORS.white, fontSize: 18, fontWeight: 'bold'}}>
+                Buy
+              </Text>
+            </View>
+          </View>
         </View>
       </View>
     </SafeAreaView>
@@ -106,6 +132,27 @@ const styles = StyleSheet.create({
     fontSize: 18,
     lineHeight: 22,
     marginTop: 20,
+  },
+  borderBtn: {
+    borderColor: COLORS.violet,
+    borderWidth: 1,
+    borderRadius: 5,
+    height: 40,
+    width: 60,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  borderBtnText: {
+    fontWeight: 'bold',
+    fontSize: 28,
+  },
+  buyBtn: {
+    width: 150,
+    height: 50,
+    backgroundColor: COLORS.violet,
+    borderRadius: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 

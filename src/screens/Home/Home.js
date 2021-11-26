@@ -13,10 +13,10 @@ import {
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import FontAwesome5Icon from 'react-native-vector-icons/FontAwesome5';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-import COLORS from '../constants/color';
-import DB from '../constants/DB';
-import CategoryList from '../components/CategoryList';
-import Card from '../components/Card';
+import COLORS from '../../constants/color';
+import DB from '../../constants/DB';
+import CategoryList from '../../components/CategoryList';
+import Card from '../../components/Card/Card';
 
 const Home = ({navigation}) => {
   return (
@@ -24,7 +24,6 @@ const Home = ({navigation}) => {
       style={{
         flex: 1,
         paddingHorizontal: 20,
-        // backgroundColor: COLORS.green,
       }}>
       <StatusBar barStyle="light-content" backgroundColor="#6a51ae" />
 
@@ -34,7 +33,6 @@ const Home = ({navigation}) => {
           height: 50,
           backgroundColor: COLORS.white,
           borderRadius: 10,
-          // flex: 1,
           flexDirection: 'row',
           alignItems: 'center',
         }}>
@@ -52,7 +50,12 @@ const Home = ({navigation}) => {
         columnWrapperStyle={{justifyContent: 'space-between'}}
         numColumns={2}
         data={DB}
-        renderItem={({item}) => <Card cloths={item} />}
+        renderItem={({item}) => (
+          <Card
+            onCardPress={() => navigation.navigate('Details', item)}
+            item={item}
+          />
+        )}
       />
     </SafeAreaView>
   );

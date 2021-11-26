@@ -2,10 +2,11 @@ import React from 'react';
 import {View, Text} from 'react-native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {NavigationContainer} from '@react-navigation/native';
-import Home from './Home';
-import Details from './Details';
-import Cart from './Cart';
-import Billing from './Billing';
+import Home from './Home/Home';
+import Details from './Details/Details';
+import Cart from './Cart/Cart';
+import Billing from './Billing/Billing';
+
 
 const Drawer = createDrawerNavigator();
 

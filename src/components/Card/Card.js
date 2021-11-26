@@ -2,30 +2,26 @@ import React from 'react';
 import {
   View,
   Text,
-  //  TouchableOpacity,
   Dimensions,
   Image,
 } from 'react-native';
-import COLORS from '../constants/color';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import {useNavigation} from '@react-navigation/native';
+import COLORS from '../../constants/color';
 
 const width = Dimensions.get('screen').width / 2 - 30;
 
-const Card = ({cloths, onCardPress}) => {
-  // const navigation = useNavigation();
-
+const Card = ({item, onCardPress}) => {
   return (
-    <TouchableOpacity onPress={() => onCardPress("presiing")}>
+    <TouchableOpacity onPress={onCardPress}>
       <View style={styles.card}>
         <View style={{height: 100, alignItems: 'center'}}>
           <Image
             style={{flex: 1, resizeMode: 'contain', zIndex: -13}}
-            source={cloths.img}
+            source={item.img}
           />
         </View>
         <Text style={{fontSize: 19, fontWeight: 'bold', marginTop: 10}}>
-          {cloths.name}
+          {item.name}
         </Text>
         <View
           style={{
@@ -33,7 +29,7 @@ const Card = ({cloths, onCardPress}) => {
             justifyContent: 'space-between',
             marginTop: 5,
           }}>
-          <Text style={{fontSize: 19, fontWeight: 'bold'}}>{cloths.price}</Text>
+          <Text style={{fontSize: 19, fontWeight: 'bold'}}>{item.price}</Text>
           <View
             style={{
               height: 25,

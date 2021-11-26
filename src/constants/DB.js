@@ -4,7 +4,7 @@ const DB = [
     name: 'swet tshirt one',
     price: '29.99',
     like: true,
-    img: require('../assets/cloths.jpg'),
+    img: require('../assets/Images/cloths.jpg'),
     about: 'laorej lsdfhsjf sflasjdfkljs sldjflkasjdf lsklfjasd jkljsdlf ',
   },
   {
@@ -12,7 +12,7 @@ const DB = [
     name: 'swet tshirt two',
     price: '29.99',
     like: true,
-    img: require('../assets/cloths.jpg'),
+    img: require('../assets/Images/cloths.jpg'),
     about: 'laorej lsdfhsjf sflasjdfkljs sldjflkasjdf lsklfjasd jkljsdlf ',
   },
   {
@@ -20,7 +20,7 @@ const DB = [
     name: 'swet tshirt three',
     price: '29.99',
     like: true,
-    img: require('../assets/cloths.jpg'),
+    img: require('../assets/Images/cloths.jpg'),
     about: 'laorej lsdfhsjf sflasjdfkljs sldjflkasjdf lsklfjasd jkljsdlf ',
   },
   {
@@ -28,7 +28,7 @@ const DB = [
     name: 'swet tshirt four',
     price: '29.99',
     like: true,
-    img: require('../assets/cloths.jpg'),
+    img: require('../assets/Images/cloths.jpg'),
     about: 'laorej lsdfhsjf sflasjdfkljs sldjflkasjdf lsklfjasd jkljsdlf ',
   },
   {
@@ -36,7 +36,7 @@ const DB = [
     name: 'swet tshirt five',
     price: '29.99',
     like: true,
-    img: require('../assets/cloths.jpg'),
+    img: require('../assets/Images/cloths.jpg'),
     about: 'laorej lsdfhsjf sflasjdfkljs sldjflkasjdf lsklfjasd jkljsdlf ',
   },
   {
@@ -44,7 +44,7 @@ const DB = [
     name: 'swet tshirt six',
     price: '29.99',
     like: true,
-    img: require('../assets/cloths.jpg'),
+    img: require('../assets/Images/cloths.jpg'),
     about: 'laorej lsdfhsjf sflasjdfkljs sldjflkasjdf lsklfjasd jkljsdlf ',
   },
   {
@@ -52,7 +52,7 @@ const DB = [
     name: 'swet tshirt seven',
     price: '29.99',
     like: true,
-    img: require('../assets/cloths.jpg'),
+    img: require('../assets/Images/cloths.jpg'),
     about: 'laorej lsdfhsjf sflasjdfkljs sldjflkasjdf lsklfjasd jkljsdlf ',
   },
   {
@@ -60,7 +60,7 @@ const DB = [
     name: 'swet tshirt eight',
     price: '29.99',
     like: true,
-    img: require('../assets/cloths.jpg'),
+    img: require('../assets/Images/cloths.jpg'),
     about: 'laorej lsdfhsjf sflasjdfkljs sldjflkasjdf lsklfjasd jkljsdlf ',
   },
 ];

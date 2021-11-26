@@ -1,15 +1,15 @@
 import React from 'react';
-import Card from './Card';
 import {storiesOf} from '@storybook/react-native';
 import {action} from '@storybook/addon-actions';
 import {withKnobs} from '@storybook/addon-ondevice-knobs';
+import Card from './Card';
 
 const cloths = {
   id: 8,
   name: 'swet tshirt eight',
   price: '29.99',
   like: true,
-  img: require('../assets/cloths.jpg'),
+  img: require('../../assets/Images/cloths.jpg'),
   about: 'laorej lsdfhsjf sflasjdfkljs sldjflkasjdf lsklfjasd jkljsdlf ',
 };
 
