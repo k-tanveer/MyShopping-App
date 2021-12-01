@@ -50,7 +50,7 @@ const Details = ({navigation, route}) => {
               <View style={styles.borderBtn}>
                 <Text style={styles.borderBtnText}>-</Text>
               </View>
-              <Text style={style.quantityText}>1</Text>
+              <Text style={styles.quantityText}>1</Text>
               <View style={styles.borderBtn}>
                 <Text style={styles.borderBtnText}>+</Text>
               </View>
